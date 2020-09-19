@@ -6,24 +6,20 @@
 
 # Revenant
  
- considered as reliable method for remotely accessing systems via the Server Message Block (SMB) protocol for both joned and non-joined domain computers. used to execute command and payloads into other computers.
- 
- - Establish SMB connection into choosen Driver Share.
- 
- - Copy desired payload and pushing it into share. ( any Writeable share driver ) 
- 
- - Using Lateral movement technique to execute a payload by tasking scheduling (OLE Objects) 
- 
- in general, this tool will allow both users and administrators to push malicious payloads into compromised shares while using Task Schedualing interface (OLE) to execute uploaded binaries or scripts.
- 
- 
- 
+Considered as a reliable method for remotely accessing systems via the Server Message Block (SMB) protocol for both joined and non-joined domain computers. Used to execute command and payloads into other computers.
+- Establish an SMB connection into the chosen Driver Share.
+- Copy the desired payload and pushing it in to share. ( any Writeable share driver )
+- Using Lateral movement technique to execute a payload by tasking scheduling (OLE Objects)
+
+In general, this tool will allow both users and administrators to push malicious payloads into compromised shares while using the Task Scheduling interface (OLE) to execute uploaded binaries or scripts.
+
  ## features 
  
- - Undetectable by AV. 
- - bypass EDR.
- - ability to use user and administrator account. 
- - adopting lateral movement for domain users. 
+- Undetectable by AV.
+- Bypass EDR.
+- Ability to use user and administrator accounts.
+- Adopting lateral movement for domain users.
+
  
  
  
