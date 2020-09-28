@@ -505,8 +505,9 @@ procedure TRevenant.WriteHelp;
 
 begin
   { add your help code here }
-  writeln('Usage - Automatic Exploitation: ', ExeName, ' -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS]');
-  writeln('Usage - Manual Exploitation: ', ExeName, ' -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS] -t (2020\09\11 13:00:00)');
+  writeln('Automatic: ', ExeName, ' -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS]');
+  writeln('');
+  writeln('Manual Task: ', ExeName, ' -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS] -t (2020\09\11 13:00:00)');
 
 end;
 
