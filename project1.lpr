@@ -28,11 +28,7 @@ uses
    LPBYTE           = ^Byte;
    NET_API_STATUS   = DWord;
 
-{EXTERNAL DECLARATIONS}
-  function NetRemoteTOD(HostName: PWideChar;
-                        Buffer: LPBYTE): NET_API_STATUS;
-   stdcall; external 'netapi32.dll' name 'NetRemoteTOD';
-  {$EXTERNALSYM NetRemoteTOD}
+
 
 type
 
