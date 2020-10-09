@@ -28,8 +28,8 @@
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
-            <TargetCPU Value="x86_64"/>
-            <TargetOS Value="win64"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
           </CodeGeneration>
         </CompilerOptions>
       </Item2>

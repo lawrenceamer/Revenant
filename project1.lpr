@@ -352,11 +352,19 @@ begin
    end;
 
   cmd := 'cmd.exe /c ';
-  writeln(length(share));
+
   if length(share) > 2 then
   s_share := stringreplace(share,'$','\',[rfReplaceAll, rfIgnoreCase])
   else
    s_share := stringreplace(share,'$','$',[rfReplaceAll, rfIgnoreCase]);
+
+// fix execution of files on ADMIN$
+  if (s_share='ADMIN\') OR (s_share='admin') then
+  s_share :=share
+  else
+  writeln('');
+
+
   if custom_attck = true then
   insec := IncSecond(StrToDateTime(cust_time,FS),5)
   else
