@@ -515,7 +515,11 @@ end;
   share := stringreplace(share,'$','',[rfReplaceAll, rfIgnoreCase])
   else
   share := stringreplace(share,'$','$',[rfReplaceAll, rfIgnoreCase]);
-
+ // fix ADMIN$
+ if (share ='ADMIN') OR (share='admin') then
+ share := share+'$'
+ else
+ writeln('[+] hijacking ...'+share);
 
   Connect(host,share,domain+username,password);
   if FConnected = true then
