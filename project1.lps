@@ -3,86 +3,78 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="11"/>
-    <BuildModes Active="Default"/>
+    <BuildModes Active="windows"/>
     <Units Count="12">
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="476"/>
-        <CursorPos X="28" Y="507"/>
+        <TopLine Value="474"/>
+        <CursorPos X="3" Y="501"/>
         <FoldState Value=" TM Hoe21?"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\packages\winunits-jedi\src\jwawinnetwk.pas"/>
-        <EditorIndex Value="11"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="366"/>
         <CursorPos X="10" Y="374"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\win\wininc\func.inc"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="131"/>
         <CursorPos X="11" Y="139"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\inc\systemh.inc"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="406"/>
         <CursorPos X="3" Y="414"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\objpas\sysutils\sysstrh.inc"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="28" Y="27"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\win\wininc\errors.inc"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="60"/>
         <CursorPos X="8" Y="69"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit5>
       <Unit6>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\packages\fcl-base\src\custapp.pp"/>
         <UnitName Value="CustApp"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="61"/>
         <CursorPos X="15" Y="67"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\objpas\sysutils\diskh.inc"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="10" Y="18"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit7>
       <Unit8>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\win\wininc\ascdef.inc"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="116"/>
         <CursorPos X="10" Y="124"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit8>
       <Unit9>
         <Filename Value="taskscheduler_tlb.pas"/>
         <UnitName Value="TaskScheduler_TLB"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="1908"/>
         <CursorPos X="39" Y="1911"/>
         <UsageCount Value="109"/>
@@ -91,22 +83,20 @@
       <Unit10>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\objpas\types.pp"/>
         <UnitName Value="Types"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="51"/>
         <CursorPos X="3" Y="60"/>
         <UsageCount Value="109"/>
-        <Loaded Value="True"/>
       </Unit10>
       <Unit11>
         <Filename Value="C:\lazarus2\fpc\3.0.4\source\rtl\objpas\sysutils\datih.inc"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="120"/>
         <CursorPos X="10" Y="128"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit11>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="project1.lpr"/>
         <Caret Line="279" Column="25" TopLine="275"/>
@@ -219,6 +209,10 @@
         <Filename Value="project1.lpr"/>
         <Caret Line="516" Column="85" TopLine="505"/>
       </Position28>
+      <Position29>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="495" Column="47" TopLine="477"/>
+      </Position29>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

