@@ -9,9 +9,9 @@
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="10"/>
-        <CursorPos Y="31"/>
-        <FoldState Value=" TM Hoa21y"/>
+        <TopLine Value="445"/>
+        <CursorPos X="33" Y="468"/>
+        <FoldState Value=" TM HpT21."/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -75,8 +75,8 @@
         <Filename Value="taskscheduler_tlb.pas"/>
         <UnitName Value="TaskScheduler_TLB"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="1908"/>
-        <CursorPos X="39" Y="1911"/>
+        <TopLine Value="157"/>
+        <CursorPos X="70" Y="120"/>
         <UsageCount Value="109"/>
         <Loaded Value="True"/>
       </Unit9>

