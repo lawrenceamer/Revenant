@@ -20,7 +20,7 @@ In general, this tool will allow both users and administrators to push malicious
 - upload executable files or scripts into any writeable share. 
 - moving laterally under the radar with some enhancement in Task Scheduling Library taskschd.dll 
 - supports all windows operating systems.
-- supports automatic exploitation or custom data and time task scheduling.
+- supports automatic exploitation or custom date and time task scheduling.
 ## usage 
 
 ```
@@ -39,7 +39,7 @@ Manual Task: Z:\home\zux0x3a\Revenant\project1.exe -h host -u test -p "admini" -
 ## Community 
 
 the project developed by Lawrence amer with much thanks to Lazarus Forums for imported Libraries to make this tool much powerful.
-for more upcoming research please make sure to bookmark 0xsp.com as your favorite site. 
+for more upcoming research please make sure to bookmark https://0xsp.com as your favorite site. 
 
  
  
