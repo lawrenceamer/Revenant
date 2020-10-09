@@ -36,6 +36,13 @@ Example: Z:\home\zux0x3a\Revenant\project1.exe -h host -u test -p "admini" -d "0
 Manual Task: Z:\home\zux0x3a\Revenant\project1.exe -h host -u test -p "admini" -d "0xsp" -s share -c payload.[EXE,BAT,VBS] -t (2020\09\11 13:00:00)
 
 ```
+## Compiling 
+this project has been built using Lazarus IDE with FPC 3.2.0  
+
+ - Download Lazarus IDE and FPC 
+ - Load project folder into IDE 
+ - navigate into Run -> Build 
+ 
 ## Community 
 
 the project developed by Lawrence amer with much thanks to Lazarus Forums for imported Libraries to make this tool much powerful.
