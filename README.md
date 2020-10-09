@@ -16,10 +16,10 @@ In general, this tool will allow both users and administrators to push malicious
  ## features 
  
 - Undetectable by AV.
-- Bypass EDR.
 - Ability to use user and administrator accounts.
 - Adopting lateral movement for domain users.
 
+.
  
  
  
