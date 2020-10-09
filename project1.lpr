@@ -359,7 +359,7 @@ begin
    s_share := stringreplace(share,'$','$',[rfReplaceAll, rfIgnoreCase]);
 
 // fix execution of files on ADMIN$
-  if (s_share='ADMIN\') OR (s_share='admin') then
+  if (s_share='ADMIN\') OR (s_share='admin\') then
   s_share :=share
   else
   writeln('');
